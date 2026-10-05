@@ -1,4 +1,4 @@
-nav ul{
+#mainLinks{
     display: flex;
     list-style: none;
     margin: 0;
@@ -19,10 +19,27 @@ li a {
     
 }
 
+.active {
+    color: #ffe600;
+    background-color: #972e0e;
+}
+
 nav{
     
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
+}
+
+#languageLinks{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: #972e0e;
     padding: 20px;
+    width: 20%;
+    height: 25px;
 }
