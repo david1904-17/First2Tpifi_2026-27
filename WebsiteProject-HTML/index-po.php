@@ -9,14 +9,14 @@
 <body>
     <nav>
         <ul id="mainLinks">
-            <li><a href="index-po.html" class="active">Home</a></li>
-            <li><a href="about-po.html">Sobre</a></li>
-            <li><a href="contact-po.html">Contacto</a></li>
-            <li><a href="products-po.html">Produtos</a></li>
+            <li><a href="index-po.php" class="active">Home</a></li>
+            <li><a href="about-po.php">Sobre</a></li>
+            <li><a href="contact-po.php">Contacto</a></li>
+            <li><a href="products-po.php">Produtos</a></li>
         </ul>
         <ul id="languageLinks">
-            <a href="index.html">English</a>
-            <a href="index-po.html" class="active">Portuguese</a>
+            <a href="index.php">English</a>
+            <a href="index-po.php" class="active">Portuguese</a>
         </ul>
     </nav>
     <h1>Bem-vindo ao Nosso Site</h1>
