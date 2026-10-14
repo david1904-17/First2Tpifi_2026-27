@@ -11,6 +11,7 @@
 <body>
    <?php 
      include_once ("commonCode.php"); 
+     navigationBar("products" , "en");
    ?>
     <div class="AllItems">
 

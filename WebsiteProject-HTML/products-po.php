@@ -9,18 +9,10 @@
 </head>
 
 <body>
-    <nav>
-        <ul id="mainLinks">
-            <li><a href="index-po.php">Home</a></li>
-            <li><a href="about-po.php">Sobre</a></li>
-            <li><a href="contact-po.php">Contacto</a></li>
-            <li><a href="products-po.php" class="active">Produtos</a></li>
-        </ul>
-        <ul id="languageLinks">
-            <a href="index.php">English</a>
-            <a href="index-po.php" class="active">Portuguese</a>
-        </ul>
-    </nav>
+    <?php 
+     include_once ("commonCode.php");
+     navigationBar("products", "po");
+    ?>
     <div class="AllItems">
         <div class="oneItem">
             <div>Ronaldo</div>

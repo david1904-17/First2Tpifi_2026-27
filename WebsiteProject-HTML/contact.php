@@ -9,6 +9,7 @@
 <body>
     <?php 
      include_once ("commonCode.php"); 
+     navigationBar("contact" , "en");
     ?>
         <h1>Contact Us here</h1>
 </body>
