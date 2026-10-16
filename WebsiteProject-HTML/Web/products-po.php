@@ -31,6 +31,12 @@
             <img src="images/totti.png" alt="Totti">
             <div>Price: $75.000.000</div>
         </div>
+
+        <div class="oneItem">
+            <div>Cardoso</div>
+            <img src="images/cardoso.png" alt="Cardoso">
+            <div>Price: $75.000.000</div>
+        </div>
     </div>
 </body>
 
