@@ -12,40 +12,24 @@
    <?php 
      include_once ("commonCode.php"); 
      navigationBar("products" , "en");
+     $namesOfProducts = ["Ronaldo", "Cancelo", "Totti", "Cardoso","Jonas", "Mbappe"];
+     $imagesOfProducts = ["images/Ronaldo.png", "images/cancelo.png", "images/totti.png", "images/cardoso.png", "images/jonas.png", "images/mbappe.png"];
+     $pricesOfProducts = [200000.000, 100000.00, 75000.00, 75000.00, 50000.00, 150000.00];
    ?>
     <div class="AllItems">
 
     <?php
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < count($namesOfProducts); $i++) {
         ?>
         <div class="oneItem">
-            <div>Ronaldo</div>
-            <img src="images/Ronaldo.png" alt="Ronaldo">
-            <div>Price: $200.000.000</div>
+            <div><?= $namesOfProducts[$i] ?></div>
+            <img src="<?= $imagesOfProducts[$i] ?>" alt= "$namesOfProducts[$i]">
+            <div>Price: $<?=$pricesOfProducts[$i] ?></div>
         </div>
         <?php
 
     }
     ?>
-
-  
-        <div class="oneItem">
-            <div>Cancelo</div>
-            <img src="images/cancelo.png" alt="Cancelo">
-            <div>Price: $100.000.000</div>
-        </div>
-
-        <div class="oneItem">
-            <div>Totti</div>
-            <img src="images/totti.png" alt="Totti">
-            <div>Price: $75.000.000</div>
-        </div>
-
-        <div class="oneItem">
-            <div>Cardoso</div>
-            <img src="images/cardoso.png" alt="Cardoso">
-            <div>Price: $75.000.000</div>
-        </div>
     </div>
 </body>
 
