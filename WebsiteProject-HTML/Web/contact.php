@@ -12,5 +12,23 @@
      navigationBar("contact" , "en");
     ?>
         <h1>Contact Us here</h1>
+        <?php
+        if (isset($_GET["username"])) {
+            print "Hello" . $_GET["username"];
+            print $_GET["username"];
+        }
+        else{
+
+        
+        ?>
+        <form method="GET" action="contact.php">
+            Please type your name here: <input type="text" name="username">
+            <button type="submit"> Send data </button>
+        </form>
+        <?php
+        }
+        ?>
+
+        
 </body>
 </html>
