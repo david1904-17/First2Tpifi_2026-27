@@ -8,36 +8,20 @@
 <body>
 
 <?php
-$a = 0;
-$b = 0;
-$c = 0;
 
-if (isset($_GET["a"]) && isset($_GET["b"])) {
-    $a =  $_GET["a"];
-    $b =  $_GET["b"];
-    $c = $a + $b;
-}
+if (isset($_GET["NumberA"]) && isset($_GET["NumberB"])) {
+    $sum = $_GET["NumberA"] + $_GET["NumberB"];
+    print "The sum of the two numbers is: " . $sum;
+} else {
 ?>
-
-<form method="GET" action="a+b.php">
-    <label>Enter number A:</label>
-    <input type="number" name="a" step="any" required>
-
-    <br><br>
-
-    <label>Enter number B:</label>
-    <input type="number" name="b" step="any" required>
-
-    <br><br>
-
-    <button type="submit">Calculate</button>
-</form>
-
-<?php
-if (isset($_GET["a"]) && isset($_GET["b"])) {
-    echo "Result: " . $a . " + " . $b . " = " . $c;
-}
-?>
-
+  <form method="GET" action="AddNumbers.php">
+    Please type a number <input type="number" name="NumberA"> <br>
+    Please type another number <input type="number" name="NumberB"> <br>
+    <button type="submit">Add</button>
+  </form>
+  <?php
+    }
+   ?>
+ 
 </body>
 </html>
