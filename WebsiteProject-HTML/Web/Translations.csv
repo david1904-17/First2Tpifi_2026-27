@@ -1,0 +1,11 @@
+﻿StringID;StringEN;StringPO
+HomePageWelcome;Welcome to Our Website;Bem-vindo ao Nosso Site
+AboutPageMainText;About Us;Sobre Nós
+HomeBtn;Home;Casa
+AboutBtn;About ;Sobre 
+ContactBtn;Contact;Contactos
+ProductsBtn;Products;Produtos
+ContactPageAskName;Please type in your Name:;Por favor, escreve o teu nome:
+ContactPageAskButton;Please type in your password:;Por favor, escreve a tua palavra-passe:
+ContactPageDataBtn;Send data;Enviar dados
+ProductsPagePrice;Price:;Preço:
