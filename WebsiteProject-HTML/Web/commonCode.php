@@ -1,57 +1,67 @@
 <?php
+
+$lang = "en";
+
+if(isset($_GET["lang"])){
+    $lang = $_GET["lang"];
+}
+
+$translations = [];
+
+$fileTranslations = fopen("Translations.csv", "r");
+while (!feof($fileTranslations)) {
+    $anotherLineOfText = fgets($fileTranslations);
+    $oneLineArray = explode(";", $anotherLineOfText);
+
+    if (count($oneLineArray) == 3) {
+        if ($lang == "en") {
+            $translations[$oneLineArray[0]] = $oneLineArray[1];
+        } else {
+            $translations[$oneLineArray[0]] = $oneLineArray[2];
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 function navigationBar($activePage, $language)
 {
+    global $translations;
     if ($language == "en") {
 ?>
         <nav>
             <ul id="mainLinks">
-                <li><a href="index.php" <?php if ($activePage == "home") {
+                <li><a href="index.php?lang<?= $language ?>" <?php if ($activePage == "home") {
                                             print "class='active'";
-                                        } ?>>Home</a></li>
-                <li><a href="about.php" <?php if ($activePage == "about") {
+                                        } ?>><?=  $translations["HomeBtn"] ?></a></li>
+                <li><a href="about.php?lang<?= $language ?>" <?php if ($activePage == "about") {
                                             print "class='active'";
-                                        } ?>>About</a></li>
-                <li><a href="contact.php" <?php if ($activePage == "contact") {
+                                        } ?>><?= $translations["AboutBtn"] ?></a></li>
+                <li><a href="contact.php?lang<?= $language ?>" <?php if ($activePage == "contact") {
                                                 print "class='active'";
-                                            } ?>>Contact</a></li>
-                <li><a href="products.php" <?php if ($activePage == "products") {
+                                            } ?>><?= $translations["ContactBtn"] ?></a></li>
+                <li><a href="products.php?lang<?= $language ?>" <?php if ($activePage == "products") {
                                                 print "class='active'";
-                                            } ?>>Products</a></li>
+                                            } ?>><?= $translations["ProductsBtn"] ?></a></li>
             </ul>
             <ul id="languageLinks">
-                <a href="index.php" class="active">English</a>
-                <a href="index-po.php">Portuguese</a>
+                <li><a href="index.php" <?php if($language == "en") print ('class="active"'); ?>>class="active">English</a></li>
+                <li><a href="index.php?lang=po" <?php if($language == "po") print ('class="active"'); ?>>Portuguese</a></li>
             </ul>
         </nav>
 
-    <?php
-    }
-    if ($language == "po") {
-    ?>
-        <nav>
-            <ul id="mainLinks">
-                <li><a href="index-po.php" <?php if ($activePage == "home") {
-                                                print "class='active'";
-                                            } ?>>Casa</a></li>
-                <li><a href="about-po.php" <?php if ($activePage == "about") {
-                                                print "class='active'";
-                                            } ?>>Sobre</a></li>
-                <li><a href="contact-po.php" <?php if ($activePage == "contact") {
-                                                    print "class='active'";
-                                                } ?>>Contactos</a></li>
-                <li><a href="products-po.php" <?php if ($activePage == "products") {
-                                                    print "class='active'";
-                                                } ?>>Produtos</a></li>
-            </ul>
-            <ul id="languageLinks">
-                <a href="index.php" class="active">English</a>
-                <a href="index-po.php">Portuguese</a>
-            </ul>
-        </nav>
+    
     <?php
     }
     ?>
-
 <?php
-}
-?>
+    }
+    ?>

@@ -9,8 +9,8 @@
 <body>
     <?php 
      include_once ("commonCode.php"); 
-     navigationBar("about" , "en");
+     navigationBar("about" ,$lang);
     ?>
-        <h1>About Us</h1>
+        <h1><?= $translations["AboutPageMainText"] ?></h1>
 </body>
 </html>

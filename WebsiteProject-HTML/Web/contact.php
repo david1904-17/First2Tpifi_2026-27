@@ -9,21 +9,22 @@
 <body>
     <?php 
      include_once ("commonCode.php"); 
-     navigationBar("contact" , "en");
+     navigationBar("contact" ,$lang);
     ?>
-        <h1>Contact Us here</h1>
+        <h1><?= $translations["ContactPageAskName"] ?></h1>
         <?php
-        if (isset($_GET["username"])) {
-            print "Hello" . $_GET["username"];
-            print $_GET["username"];
+        if (isset($_POST["username"])) 
+            {
+            print "Hello" . $_POST["username"];
         }
         else{
-
-        
         ?>
-        <form method="GET" action="contact.php">
-            Please type your name here: <input type="text" name="username">
-            <button type="submit"> Send data </button>
+
+        <form method="POST">
+            <?= $translations["ContactPageAskName"] ?> <input type="text" name="username">
+            <br>
+            <?= $translations["ContactPageAskButton"] ?> <input type="password" name="psw">
+            <button type="submit"> <?= $translations["ContactPageDataBtn"] ?> </button>
         </form>
         <?php
         }
