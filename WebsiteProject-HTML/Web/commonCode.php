@@ -1,10 +1,14 @@
 <?php
 
+
 $lang = "en";
 
-if(isset($_GET["lang"])){
+if(isset($_GET["lang"]))
+{
     $lang = $_GET["lang"];
 }
+
+
 
 $translations = [];
 
@@ -29,9 +33,6 @@ while (!feof($fileTranslations)) {
 
 
 
-
-
-
 function navigationBar($activePage, $language)
 {
     global $translations;
@@ -39,21 +40,21 @@ function navigationBar($activePage, $language)
 ?>
         <nav>
             <ul id="mainLinks">
-                <li><a href="index.php?lang<?= $language ?>" <?php if ($activePage == "home") {
+                <li><a href="index.php?lang=<?= $language ?>" <?php if ($activePage == "home") {
                                             print "class='active'";
                                         } ?>><?=  $translations["HomeBtn"] ?></a></li>
-                <li><a href="about.php?lang<?= $language ?>" <?php if ($activePage == "about") {
+                <li><a href="about.php?lang=<?= $language ?>" <?php if ($activePage == "about") {
                                             print "class='active'";
                                         } ?>><?= $translations["AboutBtn"] ?></a></li>
-                <li><a href="contact.php?lang<?= $language ?>" <?php if ($activePage == "contact") {
+                <li><a href="contact.php?lang=<?= $language ?>" <?php if ($activePage == "contact") {
                                                 print "class='active'";
                                             } ?>><?= $translations["ContactBtn"] ?></a></li>
-                <li><a href="products.php?lang<?= $language ?>" <?php if ($activePage == "products") {
+                <li><a href="products.php?lang=<?= $language ?>" <?php if ($activePage == "products") {
                                                 print "class='active'";
                                             } ?>><?= $translations["ProductsBtn"] ?></a></li>
             </ul>
             <ul id="languageLinks">
-                <li><a href="index.php" <?php if($language == "en") print ('class="active"'); ?>>class="active">English</a></li>
+                <li><a href="index.php" <?php if($language == "en") print ('class="active"'); ?>>English</a></li>
                 <li><a href="index.php?lang=po" <?php if($language == "po") print ('class="active"'); ?>>Portuguese</a></li>
             </ul>
         </nav>
