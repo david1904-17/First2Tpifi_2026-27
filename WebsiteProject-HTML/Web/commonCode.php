@@ -53,8 +53,8 @@ function navigationBar($activePage, $language)
                                             } ?>><?= $translations["ProductsBtn"] ?></a></li>
             </ul>
             <ul id="languageLinks">
-                <li><a href="index.php" <?php if($language == "en") print ('class="active"'); ?>>English</a></li>
-                <li><a href="index.php?lang=po" <?php if($language == "po") print ('class="active"'); ?>>Portuguese</a></li>
+                <li><a href="?lang=en" <?php if($language == "en") print ('class="active"'); ?>>English</a></li>
+                <li><a href="?lang=po" <?php if($language == "po") print ('class="active"'); ?>>Portuguese</a></li>
             </ul>
         </nav>
 
