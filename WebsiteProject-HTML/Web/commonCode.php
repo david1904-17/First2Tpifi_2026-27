@@ -36,7 +36,6 @@ while (!feof($fileTranslations)) {
 function navigationBar($activePage, $language)
 {
     global $translations;
-    if ($language == "en") {
 ?>
         <nav>
             <ul id="mainLinks">
@@ -61,8 +60,5 @@ function navigationBar($activePage, $language)
 
     
     <?php
-    }
-    ?>
-<?php
     }
     ?>
