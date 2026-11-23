@@ -9,3 +9,5 @@ ContactPageAskName;Please type in your Name:;Por favor, escreve o teu nome:
 ContactPageAskButton;Please type in your password:;Por favor, escreve a tua palavra-passe:
 ContactPageDataBtn;Send data;Enviar dados
 ProductsPagePrice;Price:;Preço:
+LoginBtn;Login;Iniciar Sessão
+RegistrationBtn;Register;Registar

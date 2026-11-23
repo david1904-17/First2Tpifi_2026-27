@@ -1,14 +1,22 @@
-#mainLinks{
+#registrationForm{
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: space-around;
-    border-radius: 25px;
-    background-color: #972e0e;
-    padding: 20px;
-    width: 70%;
-    height: 25px;
+    flex-direction: column;
+    background-color: #a07163;
+    width: 30%;
+}
+#registrationForm div{
+    width: 30%;
+    background-color: #a07163;
+}
+#mainLinks{
+    width: 50%;
+}
+
+#userLinks{
+    width: 20%;
+}
+#languageLinks{
+    width: 20%;
 }
 
 li a {
@@ -31,7 +39,7 @@ nav{
     
 }
 
-#languageLinks{
+nav ul{
     display: flex;
     list-style: none;
     margin: 0;
@@ -40,7 +48,6 @@ nav{
     border-radius: 25px;
     background-color: #972e0e;
     padding: 20px;
-    width: 20%;
     height: 25px;
 }
 
