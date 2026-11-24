@@ -1,10 +1,10 @@
-#registrationForm{
+#userForm{
     display: flex;
     flex-direction: column;
     background-color: #a07163;
     width: 30%;
 }
-#registrationForm div{
+#userForm div{
     width: 30%;
     background-color: #a07163;
 }
