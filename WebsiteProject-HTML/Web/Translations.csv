@@ -11,3 +11,20 @@ ContactPageDataBtn;Send data;Enviar dados
 ProductsPagePrice;Price:;Preço:
 LoginBtn;Login;Iniciar Sessão
 RegistrationBtn;Register;Registar
+LoginPageAskUsername;Username:;Nome de utilizador:
+LoginPageAskPassword;Password:;Palavra-passe:
+LoginPageDataBtn;Login;Iniciar Sessão
+LoginPageTitle;Login form;Formulário de login
+LoginPageLoginSuccess;Username and password are matching. Welcome back to our website !;O nome de utilizador e a palavra-passe correspondem. Bem-vindo de volta!
+LoginPageLoginError;Wrong username or password. Please try again.;Nome de utilizador ou palavra-passe incorretos. Tente novamente.
+RegistrationPageTitle;Registration form;Formulário de registo
+RegistrationPageAskUsername;Username:;Nome de utilizador:
+RegistrationPageAskPassword;Password:;Palavra-passe:
+RegistrationPageAskPasswordAgain;Password again:;Palavra-passe novamente:
+RegistrationPageEmailAdress;Your email address:;O teu endereço de e-mail:
+RegistrationPageFullName;Your full name:;O teu nome completo:
+RegistrationPageAge;Your age:;A tua idade:
+RegistrationPageGender;Your gender:;O teu género:
+RegistrationPageDataBtn;Register;Registar
+RegistrationPageMale;Male;Masculino
+RegistrationPageFemale;Female;Feminino
